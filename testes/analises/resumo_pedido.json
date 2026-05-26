@@ -1,0 +1,12 @@
+{
+    "arquivo_original": "pedido.py",
+    "modulo": "pedido",
+    "status": "Sucesso",
+    "latencia_segundos": 8.0,
+    "tokens_prompt": 241,
+    "tokens_resposta": 136,
+    "chunks_processados": 1,
+    "worker_id": "ed56050d",
+    "modo_analise": "testes",
+    "timestamp": 1779832298.951144
+}

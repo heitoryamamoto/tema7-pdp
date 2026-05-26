@@ -1,0 +1,26 @@
+{"ts": "2026-05-26T18:47:51", "level": "INFO", "componente": "produtor", "msg": "Escaneando pasta: ./meu_codigo"}
+{"ts": "2026-05-26T18:47:51", "level": "WARNING", "componente": "produtor", "msg": "Tentativa 1/3 falhou: Unable to locate credentials. Aguardando 2.4s..."}
+{"ts": "2026-05-26T18:47:53", "level": "WARNING", "componente": "produtor", "msg": "Tentativa 2/3 falhou: Unable to locate credentials. Aguardando 4.8s..."}
+{"ts": "2026-05-26T18:47:58", "level": "ERROR", "componente": "produtor", "msg": "Erro ao enviar ./meu_codigo/usuarios.py: Unable to locate credentials"}
+{"ts": "2026-05-26T18:47:58", "level": "WARNING", "componente": "produtor", "msg": "Tentativa 1/3 falhou: Unable to locate credentials. Aguardando 2.6s..."}
+{"ts": "2026-05-26T18:48:00", "level": "WARNING", "componente": "produtor", "msg": "Tentativa 2/3 falhou: Unable to locate credentials. Aguardando 5.0s..."}
+{"ts": "2026-05-26T18:48:05", "level": "ERROR", "componente": "produtor", "msg": "Erro ao enviar ./meu_codigo/calculadora.py: Unable to locate credentials"}
+{"ts": "2026-05-26T18:48:05", "level": "WARNING", "componente": "produtor", "msg": "Tentativa 1/3 falhou: Unable to locate credentials. Aguardando 2.8s..."}
+{"ts": "2026-05-26T18:48:08", "level": "WARNING", "componente": "produtor", "msg": "Tentativa 2/3 falhou: Unable to locate credentials. Aguardando 4.1s..."}
+{"ts": "2026-05-26T18:48:12", "level": "ERROR", "componente": "produtor", "msg": "Erro ao enviar ./meu_codigo/string_utils.py: Unable to locate credentials"}
+{"ts": "2026-05-26T18:48:12", "level": "WARNING", "componente": "produtor", "msg": "Tentativa 1/3 falhou: Unable to locate credentials. Aguardando 2.7s..."}
+{"ts": "2026-05-26T18:48:15", "level": "WARNING", "componente": "produtor", "msg": "Tentativa 2/3 falhou: Unable to locate credentials. Aguardando 4.6s..."}
+{"ts": "2026-05-26T18:48:19", "level": "ERROR", "componente": "produtor", "msg": "Erro ao enviar ./meu_codigo/pedido.py: Unable to locate credentials"}
+{"ts": "2026-05-26T18:48:19", "level": "INFO", "componente": "produtor", "msg": "Total de 4 arquivos enviados para a fila."}
+{"ts": "2026-05-26T18:49:27", "level": "INFO", "componente": "produtor", "msg": "Escaneando pasta: ./meu_codigo"}
+{"ts": "2026-05-26T18:49:28", "level": "INFO", "componente": "produtor", "msg": "Arquivo enviado: usuarios.py | MessageId: ac9e2620-3117-404f-b7ac-b0dd99ad2a6f"}
+{"ts": "2026-05-26T18:49:28", "level": "INFO", "componente": "produtor", "msg": "Arquivo enviado: calculadora.py | MessageId: 451d1ca0-99e8-467b-a1a8-8efc6748a861"}
+{"ts": "2026-05-26T18:49:28", "level": "INFO", "componente": "produtor", "msg": "Arquivo enviado: string_utils.py | MessageId: a58e85d4-9272-4b5e-83fd-851a0746303e"}
+{"ts": "2026-05-26T18:49:28", "level": "INFO", "componente": "produtor", "msg": "Arquivo enviado: pedido.py | MessageId: b0243368-2a02-4a13-8ae3-a0f62dbc67a3"}
+{"ts": "2026-05-26T18:49:28", "level": "INFO", "componente": "produtor", "msg": "Total de 4 arquivos enviados para a fila."}
+{"ts": "2026-05-26T18:51:25", "level": "INFO", "componente": "produtor", "msg": "Escaneando pasta: ./meu_codigo"}
+{"ts": "2026-05-26T18:51:26", "level": "INFO", "componente": "produtor", "msg": "Arquivo enviado: usuarios.py | MessageId: c6eb5a49-1973-454e-a9d5-f504e61ed5b6"}
+{"ts": "2026-05-26T18:51:26", "level": "INFO", "componente": "produtor", "msg": "Arquivo enviado: calculadora.py | MessageId: ab46a2a0-69fd-4663-a88b-52b9db8a6f6d"}
+{"ts": "2026-05-26T18:51:26", "level": "INFO", "componente": "produtor", "msg": "Arquivo enviado: string_utils.py | MessageId: 05852a65-2b59-4a00-adb6-98848f84f640"}
+{"ts": "2026-05-26T18:51:26", "level": "INFO", "componente": "produtor", "msg": "Arquivo enviado: pedido.py | MessageId: 364e9d10-e655-417a-8260-652dcb517950"}
+{"ts": "2026-05-26T18:51:26", "level": "INFO", "componente": "produtor", "msg": "Total de 4 arquivos enviados para a fila."}

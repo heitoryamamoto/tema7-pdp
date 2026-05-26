@@ -1,0 +1,9 @@
+calculadora.py,9.83,Sucesso,3dc57810,224,137,1
+usuarios.py,4.52,Sucesso,3dc57810,227,154,1
+calculadora.py,5.73,Sucesso,3dc57810,224,208,1
+pedido.py,5.91,Sucesso,3dc57810,241,215,1
+string_utils.py,3.06,Sucesso,3dc57810,226,104,1
+usuarios.py,4.52,Sucesso,ed56050d,227,152,1
+calculadora.py,8.99,Sucesso,9c6ae5fe,224,171,1
+pedido.py,8.00,Sucesso,ed56050d,241,136,1
+string_utils.py,6.43,Sucesso,9c6ae5fe,226,113,1

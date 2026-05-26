@@ -1,0 +1,29 @@
+{"ts": "2026-05-26T18:51:20", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Worker ed56050d iniciado | modo=testes | prompt=prompts/v1_gerar_testes.txt"}
+{"ts": "2026-05-26T18:51:26", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Processando: usuarios.py | 52 chars | modo=testes"}
+{"ts": "2026-05-26T18:51:30", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "HTTP Request: POST http://127.0.0.1:11434/api/chat \"HTTP/1.1 200 OK\""}
+{"ts": "2026-05-26T18:51:30", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Concluído: usuarios.py | latência=4.52s | chunks=1 | tokens=379"}
+{"ts": "2026-05-26T18:51:30", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Mensagem removida da fila."}
+{"ts": "2026-05-26T18:51:30", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Processando: pedido.py | 104 chars | modo=testes"}
+{"ts": "2026-05-26T18:51:38", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "HTTP Request: POST http://127.0.0.1:11434/api/chat \"HTTP/1.1 200 OK\""}
+{"ts": "2026-05-26T18:51:38", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Concluído: pedido.py | latência=8.00s | chunks=1 | tokens=377"}
+{"ts": "2026-05-26T18:51:39", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Mensagem removida da fila."}
+{"ts": "2026-05-26T18:51:49", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (1/3)"}
+{"ts": "2026-05-26T18:51:59", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (2/3)"}
+{"ts": "2026-05-26T18:52:09", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (3/3)"}
+{"ts": "2026-05-26T18:52:19", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (1/3)"}
+{"ts": "2026-05-26T18:52:30", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (2/3)"}
+{"ts": "2026-05-26T18:52:40", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (3/3)"}
+{"ts": "2026-05-26T18:52:50", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (1/3)"}
+{"ts": "2026-05-26T18:53:00", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (2/3)"}
+{"ts": "2026-05-26T18:53:10", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (3/3)"}
+{"ts": "2026-05-26T18:53:21", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (1/3)"}
+{"ts": "2026-05-26T18:53:31", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (2/3)"}
+{"ts": "2026-05-26T18:53:41", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (3/3)"}
+{"ts": "2026-05-26T18:53:51", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (1/3)"}
+{"ts": "2026-05-26T18:54:01", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (2/3)"}
+{"ts": "2026-05-26T18:54:12", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (3/3)"}
+{"ts": "2026-05-26T18:54:22", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (1/3)"}
+{"ts": "2026-05-26T18:54:32", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (2/3)"}
+{"ts": "2026-05-26T18:54:42", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (3/3)"}
+{"ts": "2026-05-26T18:54:52", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Fila vazia. Aguardando... (1/3)"}
+{"ts": "2026-05-26T18:55:01", "level": "INFO", "worker": "ed56050d", "modo": "testes", "msg": "Worker encerrado pelo usuário."}

@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(python3 -c ' *)",
+      "Bash(chmod +x /Users/heitoryamamoto/distribuido/scripts/rodar_testes.sh)",
+      "Bash(pandoc --version)",
+      "Bash(python3 -c \"import weasyprint; print\\('weasyprint ok'\\)\")",
+      "Bash(python3 -c \"import markdown; print\\('markdown ok'\\)\")",
+      "Bash(pip3 install *)",
+      "Bash(python3 scripts/gerar_pdf.py)",
+      "Bash(brew install *)",
+      "Bash(pandoc documento_tecnico.md -o documento_tecnico.pdf --pdf-engine=wkhtmltopdf)",
+      "Bash(pandoc documento_tecnico.md -o documento_tecnico.html)",
+      "Bash(pandoc documento_tecnico.md -o documento_tecnico.pdf --pdf-engine=tectonic -V geometry:margin=2.5cm -V fontsize=11pt -V lang=pt-BR)",
+      "Bash(pandoc documento_tecnico.md -o documento_tecnico.pdf --pdf-engine=xelatex -V geometry:margin=2.5cm -V fontsize=11pt -V lang=pt-BR)",
+      "Bash(pandoc documento_tecnico.md -o documento_tecnico.html --standalone --metadata 'title=Gerador Paralelo de Testes — Tema 7' -V lang=pt-BR)",
+      "Bash(python3 -)",
+      "Bash(open /Users/heitoryamamoto/distribuido/documento_tecnico.html)",
+      "Bash(python3 produtor.py)"
+    ]
+  }
+}

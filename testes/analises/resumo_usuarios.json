@@ -1,0 +1,12 @@
+{
+    "arquivo_original": "usuarios.py",
+    "modulo": "usuarios",
+    "status": "Sucesso",
+    "latencia_segundos": 4.52,
+    "tokens_prompt": 227,
+    "tokens_resposta": 152,
+    "chunks_processados": 1,
+    "worker_id": "ed56050d",
+    "modo_analise": "testes",
+    "timestamp": 1779832290.630864
+}

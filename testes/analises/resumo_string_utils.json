@@ -1,0 +1,12 @@
+{
+    "arquivo_original": "string_utils.py",
+    "modulo": "string_utils",
+    "status": "Sucesso",
+    "latencia_segundos": 6.43,
+    "tokens_prompt": 226,
+    "tokens_resposta": 113,
+    "chunks_processados": 1,
+    "worker_id": "9c6ae5fe",
+    "modo_analise": "testes",
+    "timestamp": 1779832302.026242
+}

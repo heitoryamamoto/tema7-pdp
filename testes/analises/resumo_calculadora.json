@@ -1,0 +1,12 @@
+{
+    "arquivo_original": "calculadora.py",
+    "modulo": "calculadora",
+    "status": "Sucesso",
+    "latencia_segundos": 8.99,
+    "tokens_prompt": 224,
+    "tokens_resposta": 171,
+    "chunks_processados": 1,
+    "worker_id": "9c6ae5fe",
+    "modo_analise": "testes",
+    "timestamp": 1779832295.258841
+}

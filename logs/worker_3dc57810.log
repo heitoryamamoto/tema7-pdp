@@ -1,0 +1,24 @@
+{"ts": "2026-05-26T18:48:59", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Worker 3dc57810 iniciado | modo=testes | prompt=prompts/v1_gerar_testes.txt"}
+{"ts": "2026-05-26T18:49:00", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Processando: calculadora.py | 32 chars | modo=testes"}
+{"ts": "2026-05-26T18:49:10", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "HTTP Request: POST http://127.0.0.1:11434/api/chat \"HTTP/1.1 200 OK\""}
+{"ts": "2026-05-26T18:49:10", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Concluído: calculadora.py | latência=9.83s | chunks=1 | tokens=361"}
+{"ts": "2026-05-26T18:49:10", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Mensagem removida da fila."}
+{"ts": "2026-05-26T18:49:20", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Fila vazia. Aguardando... (1/3)"}
+{"ts": "2026-05-26T18:49:28", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Processando: usuarios.py | 52 chars | modo=testes"}
+{"ts": "2026-05-26T18:49:32", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "HTTP Request: POST http://127.0.0.1:11434/api/chat \"HTTP/1.1 200 OK\""}
+{"ts": "2026-05-26T18:49:32", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Concluído: usuarios.py | latência=4.52s | chunks=1 | tokens=381"}
+{"ts": "2026-05-26T18:49:32", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Mensagem removida da fila."}
+{"ts": "2026-05-26T18:49:33", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Processando: calculadora.py | 32 chars | modo=testes"}
+{"ts": "2026-05-26T18:49:38", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "HTTP Request: POST http://127.0.0.1:11434/api/chat \"HTTP/1.1 200 OK\""}
+{"ts": "2026-05-26T18:49:38", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Concluído: calculadora.py | latência=5.73s | chunks=1 | tokens=432"}
+{"ts": "2026-05-26T18:49:39", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Mensagem removida da fila."}
+{"ts": "2026-05-26T18:49:39", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Processando: pedido.py | 104 chars | modo=testes"}
+{"ts": "2026-05-26T18:49:45", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "HTTP Request: POST http://127.0.0.1:11434/api/chat \"HTTP/1.1 200 OK\""}
+{"ts": "2026-05-26T18:49:45", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Concluído: pedido.py | latência=5.91s | chunks=1 | tokens=456"}
+{"ts": "2026-05-26T18:49:45", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Mensagem removida da fila."}
+{"ts": "2026-05-26T18:49:45", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Processando: string_utils.py | 49 chars | modo=testes"}
+{"ts": "2026-05-26T18:49:48", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "HTTP Request: POST http://127.0.0.1:11434/api/chat \"HTTP/1.1 200 OK\""}
+{"ts": "2026-05-26T18:49:48", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Concluído: string_utils.py | latência=3.06s | chunks=1 | tokens=330"}
+{"ts": "2026-05-26T18:49:48", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Mensagem removida da fila."}
+{"ts": "2026-05-26T18:49:48", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Todos os 4 arquivos processados. Iniciando agregação..."}
+{"ts": "2026-05-26T18:49:56", "level": "INFO", "worker": "3dc57810", "modo": "testes", "msg": "Worker encerrado pelo usuário."}

@@ -1,0 +1,21 @@
+{
+    "total_arquivos_analisados": 4,
+    "sucessos": 4,
+    "falhas": 0,
+    "tempo_total_acumulado_cpu_segundos": 27.939999999999998,
+    "tempo_real_relogio_segundos": 17.83,
+    "throughput_arquivos_por_segundo": 0.224,
+    "total_tokens_prompt": 918,
+    "total_tokens_resposta": 572,
+    "workers_utilizados": [
+        "ed56050d",
+        "9c6ae5fe"
+    ],
+    "modulos_processados": [
+        "string_utils",
+        "pedido",
+        "usuarios",
+        "calculadora"
+    ],
+    "conflitos_detectados": []
+}
