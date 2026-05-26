@@ -17,7 +17,7 @@ meu_codigo/*.py
 [Worker 1] [Worker 2]   ← processos independentes (paralelismo real)
   worker.py worker.py
       |          |
-  [Ollama llama3.2:3b]  ← SLM local auto-hospedado
+  [Ollama llama3.2:1b]  ← SLM auto-hospedado em EC2 t3.small
       |          |
   └───┬───┘
   [Agregador]
@@ -34,17 +34,15 @@ meu_codigo/*.py
 ## Pré-requisitos
 
 - Python 3.8+
-- [Ollama](https://ollama.com) instalado localmente
-- AWS CLI configurado (`~/.aws/credentials`) com acesso ao SQS
+- AWS CLI configurado (`~/.aws/credentials`) com acesso ao SQS e EC2
 
 ```bash
 pip install boto3 ollama
-ollama pull llama3.2:3b
 ```
 
 ## Setup
 
-### 1. Criar a infraestrutura AWS
+### 1. Criar a infraestrutura AWS (SQS)
 
 ```bash
 python3 scripts/setup_aws.py
@@ -52,7 +50,43 @@ python3 scripts/setup_aws.py
 
 Isso cria a fila SQS principal e a Dead Letter Queue vinculada. Copie a URL gerada e substitua `QUEUE_URL` em `produtor.py` e `worker.py`.
 
-### 2. Colocar os arquivos a analisar
+### 2. Provisionar EC2 com Ollama (SLM auto-hospedado)
+
+```bash
+# Defina o nome do par de chaves SSH da sua conta AWS Academy:
+export AWS_KEY_PAIR=vockey   # ou o nome que aparece em EC2 > Key Pairs
+
+python3 scripts/setup_ec2.py
+```
+
+Isso cria um Security Group com a porta `22` aberta, sobe uma instância `t3.small` (CPU) e instala o Ollama + modelo `llama3.2:1b` automaticamente via user-data.
+
+> **GPU disponível?** Edite `INSTANCE_TYPE = 'g4dn.xlarge'` e `model='llama3.2:3b'` para inferência ~5× mais rápida.
+
+Aguarde ~3 minutos para a inicialização, depois confirme:
+
+```bash
+curl http://<IP_EC2>:11434/api/tags
+```
+
+**Setup manual (SSH):** se preferir configurar na mão, use o script `scripts/ec2_setup_ollama.sh` após conectar via SSH.
+
+### 3. Configurar OLLAMA_HOST nos workers
+
+```powershell
+# PowerShell (Windows)
+$env:OLLAMA_HOST = "http://<IP_EC2>:11434"
+python worker.py
+```
+
+```bash
+# Bash (Linux/Mac)
+OLLAMA_HOST=http://<IP_EC2>:11434 python3 worker.py
+```
+
+Se `OLLAMA_HOST` não for definido, o worker usa `http://localhost:11434` (Ollama local).
+
+### 4. Colocar os arquivos a analisar
 
 Coloque os arquivos `.py` que deseja analisar na pasta `meu_codigo/`.
 
@@ -115,6 +149,9 @@ distribuido/
 │   └── v2_detectar_smells.txt  # Prompt para detecção de code smells
 ├── scripts/
 │   ├── setup_aws.py            # Cria filas SQS e DLQ na AWS
+│   ├── setup_ec2.py            # Provisiona instância EC2 via boto3
+│   ├── deploy_ec2.sh           # Instala Ollama e dependências no EC2
+│   ├── ec2_setup_ollama.sh     # User-data para setup automático do EC2
 │   └── rodar_testes.sh         # Executa os testes gerados com pytest
 ├── meu_codigo/                 # Arquivos Python a analisar
 ├── testes/                     # Saída: testes gerados + relatórios
@@ -135,4 +172,4 @@ distribuido/
 
 ## Bônus SLM
 
-Este projeto usa Ollama com `llama3.2:3b` auto-hospedado em vez do Amazon Bedrock, o que permite controle total da infraestrutura de inferência e demonstração direta do impacto do paralelismo no throughput de tokens por segundo.
+Este projeto usa Ollama com `llama3.2:1b` auto-hospedado em EC2 t3.small (CPU-only) em vez do Amazon Bedrock, o que permite controle total da infraestrutura de inferência e demonstração direta do impacto do paralelismo no throughput de tokens por segundo.

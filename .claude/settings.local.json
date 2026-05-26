@@ -17,7 +17,11 @@
       "Bash(pandoc documento_tecnico.md -o documento_tecnico.html --standalone --metadata 'title=Gerador Paralelo de Testes — Tema 7' -V lang=pt-BR)",
       "Bash(python3 -)",
       "Bash(open /Users/heitoryamamoto/distribuido/documento_tecnico.html)",
-      "Bash(python3 produtor.py)"
+      "Bash(python3 produtor.py)",
+      "Bash(dir \"C:\\\\Users\\\\heito\\\\Downloads\\\\*.pem\")",
+      "Bash(dir \"C:\\\\Users\\\\heito\\\\*.pem\")",
+      "Bash(dir \"C:\\\\Users\\\\heito\\\\Desktop\\\\*.pem\")",
+      "Bash(dir \"C:\\\\Users\\\\heito\\\\Documents\\\\*.pem\")"
     ]
   }
 }

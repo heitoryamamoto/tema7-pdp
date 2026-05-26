@@ -18,6 +18,10 @@ CHUNK_MAX_CHARS = 3000
 MODO_ANALISE = os.environ.get('MODO_ANALISE', 'testes')
 PROMPT_FILE = 'prompts/v1_gerar_testes.txt' if MODO_ANALISE == 'testes' else 'prompts/v2_detectar_smells.txt'
 
+# OLLAMA_HOST: URL do servidor Ollama (ex: http://<IP_EC2>:11434). Padrão: localhost
+OLLAMA_HOST = os.environ.get('OLLAMA_HOST', 'http://localhost:11434')
+ollama_client = ollama.Client(host=OLLAMA_HOST)
+
 sqs = boto3.client('sqs', region_name='us-east-1')
 
 # Logging estruturado em JSON
@@ -106,7 +110,7 @@ def chamar_ia_local(nome_arquivo, codigo_chunk, nome_modulo, indice_chunk=1, tot
     )
 
     resposta = chamar_com_retry(
-        lambda: ollama.chat(model='llama3.2:3b', messages=[
+        lambda: ollama_client.chat(model='llama3.2:1b', messages=[
             {'role': 'system', 'content': system_prompt},
             {'role': 'user', 'content': prompt_usuario}
         ])
@@ -236,7 +240,7 @@ def processar_mensagem(corpo_mensagem):
 
 
 def iniciar_worker():
-    logging.info(f"Worker {WORKER_ID} iniciado | modo={MODO_ANALISE} | prompt={PROMPT_FILE}")
+    logging.info(f"Worker {WORKER_ID} iniciado | modo={MODO_ANALISE} | prompt={PROMPT_FILE} | ollama={OLLAMA_HOST}")
     polls_vazios_consecutivos = 0
     POLLS_PARA_AGREGAR = 3  # confirma fila vazia antes de agregar
 
